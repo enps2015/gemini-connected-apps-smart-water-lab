@@ -1,10 +1,10 @@
 column,unit,type,meaning,allowed_use,caveat
 timestamp_utc,ISO-8601 UTC,time,Timestamp for each synthetic five-minute reading,input/time index,All timestamps are generated; they do not describe real operations
- zone_id,identifier,category,Synthetic district-metered area identifier,input/grouping,Not a real network zone
- inlet_flow_m3h,m3/h,float,Simulated inlet flow reading including baseline loss and selected event effects,input,Illustrative; not calibrated to a real network
- demand_proxy_m3h,m3/h,float,Simulated aggregated district demand proxy,input,Assumed observable measurement; may differ from actual field instrumentation
- pressure_p01_upstream_m,m,float,Simulated upstream pressure head,input,Pedagogical equation; not a real pressure measurement
- pressure_p02_mid_m,m,float,Simulated mid-network pressure head,input,Pedagogical equation; not a real pressure measurement
- pressure_p03_downstream_m,m,float,Simulated downstream pressure head with possible fault bias,input,Pedagogical equation; may include synthetic drift or sensor bias
- tank_level_m,m,float,Simulated tank-level signal,input/context,Not used by baseline detector
- pump_state,category,category,Synthetic pump operation state,input/context,Stylized schedule; not derived from real controller data
+zone_id,identifier,category,Synthetic district-metered area identifier,input/grouping,Not a real network zone
+inlet_flow_m3h,m3/h,float,Simulated inlet flow reading including baseline loss and selected event effects,input,Illustrative; not calibrated to a real utility
+demand_proxy_m3h,m3/h,float,Simulated aggregated district demand proxy,input,Assumed observable measurement; may differ from actual field instrumentation
+pressure_p01_upstream_m,m,float,Simulated upstream pressure head,input,Pedagogical equation; not a real pressure measurement
+pressure_p02_mid_m,m,float,Simulated mid-network pressure head,input,Pedagogical equation; not a real pressure measurement
+pressure_p03_downstream_m,m,float,Simulated downstream pressure head with possible fault bias,input,Pedagogical equation; may include synthetic drift or sensor bias
+tank_level_m,m,float,Simulated tank-level signal,input/context,Not used by baseline detector
+pump_state,category,category,Synthetic pump operation state,input/context,Stylized schedule; not derived from real controller data
