@@ -1,5 +1,0 @@
-registro_id,data_hora_local,app_conectado,objetivo,acao_exata_executada,prompt_ou_consulta_literal,arquivo_ou_resultado_retornado,evidencia_captura,resultado_estado,validacao_manual,limites_ou_erros,proximo_passo
-APP-01,,GitHub,,,,,,PENDENTE,,,
-APP-02,,Google Workspace,,,,,,PENDENTE,,,
-APP-03,,YouTube,,,,,,PENDENTE,,,
-APP-04,,Serviços de pesquisa,,,,,,PENDENTE,,,
