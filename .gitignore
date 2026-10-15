@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+# Keep the compact synthetic input CSV and baseline metrics under version control.
+# Generated predictions may be regenerated; leave them committed for the demo at this initial stage.
