@@ -1,4 +1,4 @@
-name: Python tests
+name: Python tests — blind audit branch
 
 on:
   push:
@@ -14,9 +14,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Regenerate synthetic data
-        run: python src/generate_synthetic_data.py
-      - name: Run data integrity tests
+      - name: Run blind input tests
         run: python -m unittest discover -s tests -v
-      - name: Run baseline detector
+      - name: Run prediction-only detector
         run: python src/baseline_detector.py
