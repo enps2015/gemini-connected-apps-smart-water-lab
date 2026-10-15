@@ -1,9 +1,8 @@
-# Dados do projeto
+# Dados disponíveis nesta branch de auditoria cega
 
-- `telemetry_synthetic_5min.csv`: entrada do detector; 4.032 leituras em intervalos de cinco minutos, com 14 dias de dados simulados.
-- `ground_truth_events.csv`: registro separado para avaliação offline; seis eventos, três rotulados como vazamento e três como não vazamento.
-- `data_dictionary.csv`: descrição das variáveis.
+- `telemetry_synthetic_5min.csv`: 4.032 leituras sintéticas em intervalos de cinco minutos durante 14 dias.
+- `data_dictionary.csv`: descrição das colunas, unidades, usos e limitações.
 
-Todos os dados de medição são gerados pelo script `../src/generate_synthetic_data.py`, com semente determinística `20261015`. Os arquivos não contêm medições reais de uma concessionária. Não os descreva como dados de campo, dados de cliente ou cópias do BattLeDIM.
+A telemetria é sintética e pedagógica. Não representa uma concessionária, não foi calibrada por medições reais e não deve ser usada para decisões operacionais. A seleção geral das variáveis e a cadência foram informadas pela literatura sobre monitoramento SCADA, mas os valores são simulados.
 
-A literatura real inspira o tipo geral de variável (vazão, pressão, nível e consumo agregado) e a cadência de cinco minutos, mas os coeficientes, amplitudes, ruído e horários dos eventos foram escolhidos para este experimento. Não existe calibração hidráulica nem identidade entre os valores sintéticos e os valores do benchmark citado.
+Esta branch de auditoria intencionalmente não inclui os rótulos dos eventos, a definição dos eventos no gerador, nem métricas pré-calculadas. O repositório principal contém esses materiais para a fase posterior de avaliação offline.
